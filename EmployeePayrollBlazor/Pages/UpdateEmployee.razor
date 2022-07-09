@@ -1,0 +1,146 @@
+﻿@page "/update/{id}"
+@using EmployeePayrollModelLayer
+@using EmployeePayrollManagerLayer.Interface
+@inject IEmployeeManager Employeemanager
+@inject NavigationManager navigationManager
+
+
+<header class="header-content header">
+    <div class="logo-content">
+        <img src="./assets/EmpPayrollLogo.png" alt="logo">
+        <div>
+            <span class="emp-text">employee</span><br>
+            <span class="emp-text emp-payroll">payroll</span>
+        </div>
+    </div>
+</header>
+
+
+<form>
+    <EditForm Model="@model" OnSubmit="Update">
+        <div class="form-content">
+            <div class="form-head">Employee Payroll Form</div>
+            <div class="row-content">
+                <label class="label text" for="name">Name</label>
+                <input class="input" type="text" placeholder="Your name.." @bind="@model.Name" required>
+                <error-output class="text-error" for="text"></error-output>
+            </div>
+
+            <div class="row-content">
+                <label class="label text" for="profile">Profile Image</label>
+                <div class="profile-radio-content">
+
+                    <label class="checkMain">
+                        <input type="radio" class="largerCheckbox" id="profile1" name="profile"
+                               value="./assets/profile-images/Ellipse-1.png"
+                               @onchange="@(()=> AddImage("./assets/1.png"))" />
+                        <span class="checkmark" id="profile1"></span>
+                        <img class="profile" id="img1" src="./assets/1.png" />
+                    </label>
+
+                    <label class="checkMain">
+                        <input type="radio" class="largerCheckbox" id="profile1" name="profile"
+                               value="./assets/profile-images/Ellipse-2.png"
+                               @onchange="@(()=> AddImage("./assets/2.png"))" />
+                        <span class="checkmark" id="profile1"></span>
+                        <img class="profile" id="img1" src="./assets/2.png" />
+                    </label>
+
+                    <label class="checkMain">
+                        <input type="radio" class="largerCheckbox" id="profile1" name="profile"
+                               value="./assets/profile-images/Ellipse-3.png"
+                               @onchange="@(()=> AddImage("./assets/3.png"))" />
+                        <span class="checkmark" id="profile1"></span>
+                        <img class="profile" id="img1" src="./assets/3.png" />
+                    </label>
+
+                    <label class="checkMain">
+                        <input type="radio" class="largerCheckbox" id="profile1" name="profile"
+                               value="./assets/profile-images/Ellipse-4.png"
+                               @onchange="@(()=> AddImage("./assets/4.png"))" />
+                        <span class="checkmark" id="profile1"></span>
+                        <img class="profile" id="img1" src="./assets/4.png" />
+                    </label>
+
+                </div>
+            </div>
+
+            <div class="row-content">
+                <label class="label text" for="gender">Gender</label>
+                <div>
+                    <select class="select" name="gender" @bind="@model.Gender" required>
+                        <option value="select">
+                            Select Gender
+                        </option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row-content">
+                <label class="label text" for="department">Department</label>
+                <div>
+                    <select class="select" name="department" @bind="@model.Department" required>
+                        <option value="select">
+                            Select Department
+                        </option>
+                        <option value="HR">HR</option>
+                        <option value="Developer">Developer</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row-content">
+                <label class="label text" for="salary">Choose your Salary: </label>
+                <input class="input" type="number" name="salary" min="30000" max="60000" step="100"
+                       defaultvalue="40000" @bind="@model.Salary">
+                <output class="salary-output text" for="salary">400000</output>
+            </div>
+
+            <div class="row-content">
+                <label class="label text" for="startDate">Start Date</label>
+                <input class="ip" type="date" @bind="@model.Date" />
+            </div>
+
+            <div class="row-content">
+                <label class="label text" for="notes">Notes</label>
+                <textarea id="notes" class="input" name="Notes" placeholder="Notes..." style="height:100px" @bind="model.Notes"></textarea>
+            </div>
+
+            <div class="buttonParent">
+                <a href="./home.html" class=" button cancelButton" @onclick="@Cancel">Cancel</a>
+                <div class="submit-reset">
+                    <button type="submit" class="button submitButton" id="submitButton">Save</button>
+                </div>
+            </div>
+        </div>
+    </EditForm>
+</form>
+
+@code {
+
+    EmployeeModel model = new EmployeeModel();
+
+    [Parameter]
+    public string id { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        model = await Task.Run(() => Employeemanager.GetEmployeeById(id));
+    }
+
+    protected void Update()
+    {
+        Employeemanager.UpdateEmployee(model);
+        navigationManager.NavigateTo("/");
+    }
+    protected void AddImage(string image)
+    {
+        model.Profile = image;
+    }
+    void Cancel()
+    {
+        navigationManager.NavigateTo("/add");
+    }
+}
