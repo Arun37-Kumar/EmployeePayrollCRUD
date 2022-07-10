@@ -100,7 +100,7 @@
 
             <div class="row-content">
                 <label class="label text" for="startDate">Start Date</label>
-                <input class="ip" type="date" @bind="@model.Date" />
+                <input class="input" type="date" @bind="@model.Date" />
             </div>
 
             <div class="row-content">
@@ -111,7 +111,7 @@
             <div class="buttonParent">
                 <a href="./home.html" class=" button cancelButton" @onclick="@Cancel">Cancel</a>
                 <div class="submit-reset">
-                    <button type="submit" class="button submitButton" id="submitButton">Save</button>
+                    <button type="submit" class="button submitButton Save" id="submitButton">Save</button>
                 </div>
             </div>
         </div>
@@ -133,7 +133,7 @@
     protected void Update()
     {
         Employeemanager.UpdateEmployee(model);
-        navigationManager.NavigateTo("/");
+        navigationManager.NavigateTo("/show");
     }
     protected void AddImage(string image)
     {
@@ -141,6 +141,6 @@
     }
     void Cancel()
     {
-        navigationManager.NavigateTo("/add");
+        navigationManager.NavigateTo("/show");
     }
 }

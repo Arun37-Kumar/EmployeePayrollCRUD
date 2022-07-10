@@ -21,7 +21,7 @@ namespace EmployeePayrollRepositoryLayer.Services
             this.configuration = configuration;
             var client = new MongoClient(settings.ConnectionString);
             var database = client.GetDatabase(settings.DatabaseName);
-            Employee = database.GetCollection<EmployeeModel>("Employee");
+            Employee = database.GetCollection<EmployeeModel>("EmployeePayroll");
         }
 
         /// <summary>

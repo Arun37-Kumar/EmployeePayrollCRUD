@@ -20,36 +20,36 @@
         <h3>Are you sure you want to delete this?</h3>
         <div class="col">
             <div>
-                <label>Employee ID:</label>
-                <label>@Emp.Id</label>
+                <label class="delete label">Employee ID:</label>
+                <label class="delete value">@Emp.Id</label>
             </div>
             <div>
-                <label>Name:</label>
-                <label>@Emp.Name</label>
+                <label class="delete label">Name:</label>
+                <label class="delete value">@Emp.Name</label>
             </div>
             <div>
-                <label>Profile Image:</label>
-                <img class="profile" id="img1" src=@Emp.Profile />
+                <label class="delete label">Profile Image:</label>
+                <img class="profileDelete" id="img1" src=@Emp.Profile />
             </div>
             <div>
-                <label>Gender:</label>
-                <label>@Emp.Gender</label>
+                <label class="delete label">Gender:</label>
+                <label class="delete value">@Emp.Gender</label>
             </div>
             <div>
-                <label>Department:</label>
-                <label>@Emp.Department</label>
+                <label class="delete label">Department:</label>
+                <label class="delete value">@Emp.Department</label>
             </div>
             <div>
-                <label>Salary:</label>
-                <label>@Emp.Salary</label>
+                <label class="delete label">Salary:</label>
+                <label class="delete value">@Emp.Salary</label>
             </div>
             <div>
-                <label>StartDate:</label>
-                <label>@Emp.Date</label>
+                <label class="delete label">StartDate:</label>
+                <label class="delete value">@Emp.Date</label>
             </div>
             <div>
-                <label>Notes:</label>
-                <label>@Emp.Notes</label>
+                <label class="delete label">Notes:</label>
+                <label class="delete value">@Emp.Notes</label>
             </div>
         </div>
         <div class="col">
@@ -75,10 +75,10 @@
     protected void DeleteCustomers()
     {
         manager.DeleteEmployee(Emp.Id);
-        NavigationManager.NavigateTo("/");
+        NavigationManager.NavigateTo("/show");
     }
     void Cancel()
     {
-        NavigationManager.NavigateTo("/");
+        NavigationManager.NavigateTo("/show");
     }
 }

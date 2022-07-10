@@ -1,0 +1,30 @@
+F:\CFP Projects\EmployeePayrollBlazor\EmployeePayrollManagerLayer\bin\Debug\netcoreapp3.1\EmployeePayrollManagerLayer.deps.json
+F:\CFP Projects\EmployeePayrollBlazor\EmployeePayrollManagerLayer\bin\Debug\netcoreapp3.1\EmployeePayrollManagerLayer.dll
+F:\CFP Projects\EmployeePayrollBlazor\EmployeePayrollManagerLayer\bin\Debug\netcoreapp3.1\EmployeePayrollManagerLayer.pdb
+F:\CFP Projects\EmployeePayrollBlazor\EmployeePayrollManagerLayer\bin\Debug\netcoreapp3.1\EmployeePayrollModelLayer.dll
+F:\CFP Projects\EmployeePayrollBlazor\EmployeePayrollManagerLayer\bin\Debug\netcoreapp3.1\EmployeePayrollRepositoryLayer.dll
+F:\CFP Projects\EmployeePayrollBlazor\EmployeePayrollManagerLayer\bin\Debug\netcoreapp3.1\EmployeePayrollRepositoryLayer.pdb
+F:\CFP Projects\EmployeePayrollBlazor\EmployeePayrollManagerLayer\bin\Debug\netcoreapp3.1\EmployeePayrollModelLayer.pdb
+F:\CFP Projects\EmployeePayrollBlazor\EmployeePayrollManagerLayer\obj\Debug\netcoreapp3.1\EmployeePayrollManagerLayer.csproj.AssemblyReference.cache
+F:\CFP Projects\EmployeePayrollBlazor\EmployeePayrollManagerLayer\obj\Debug\netcoreapp3.1\EmployeePayrollManagerLayer.GeneratedMSBuildEditorConfig.editorconfig
+F:\CFP Projects\EmployeePayrollBlazor\EmployeePayrollManagerLayer\obj\Debug\netcoreapp3.1\EmployeePayrollManagerLayer.AssemblyInfoInputs.cache
+F:\CFP Projects\EmployeePayrollBlazor\EmployeePayrollManagerLayer\obj\Debug\netcoreapp3.1\EmployeePayrollManagerLayer.AssemblyInfo.cs
+F:\CFP Projects\EmployeePayrollBlazor\EmployeePayrollManagerLayer\obj\Debug\netcoreapp3.1\EmployeePayrollManagerLayer.csproj.CoreCompileInputs.cache
+F:\CFP Projects\EmployeePayrollBlazor\EmployeePayrollManagerLayer\obj\Debug\netcoreapp3.1\EmployeePayrollManagerLayer.csproj.CopyComplete
+F:\CFP Projects\EmployeePayrollBlazor\EmployeePayrollManagerLayer\obj\Debug\netcoreapp3.1\EmployeePayrollManagerLayer.dll
+F:\CFP Projects\EmployeePayrollBlazor\EmployeePayrollManagerLayer\obj\Debug\netcoreapp3.1\EmployeePayrollManagerLayer.pdb
+F:\CFP\EmployeePayroll\EmployeePayrollManagerLayer\bin\Debug\netcoreapp3.1\EmployeePayrollManagerLayer.deps.json
+F:\CFP\EmployeePayroll\EmployeePayrollManagerLayer\bin\Debug\netcoreapp3.1\EmployeePayrollManagerLayer.dll
+F:\CFP\EmployeePayroll\EmployeePayrollManagerLayer\bin\Debug\netcoreapp3.1\EmployeePayrollManagerLayer.pdb
+F:\CFP\EmployeePayroll\EmployeePayrollManagerLayer\bin\Debug\netcoreapp3.1\EmployeePayrollModelLayer.dll
+F:\CFP\EmployeePayroll\EmployeePayrollManagerLayer\bin\Debug\netcoreapp3.1\EmployeePayrollRepositoryLayer.dll
+F:\CFP\EmployeePayroll\EmployeePayrollManagerLayer\bin\Debug\netcoreapp3.1\EmployeePayrollRepositoryLayer.pdb
+F:\CFP\EmployeePayroll\EmployeePayrollManagerLayer\bin\Debug\netcoreapp3.1\EmployeePayrollModelLayer.pdb
+F:\CFP\EmployeePayroll\EmployeePayrollManagerLayer\obj\Debug\netcoreapp3.1\EmployeePayrollManagerLayer.csproj.AssemblyReference.cache
+F:\CFP\EmployeePayroll\EmployeePayrollManagerLayer\obj\Debug\netcoreapp3.1\EmployeePayrollManagerLayer.GeneratedMSBuildEditorConfig.editorconfig
+F:\CFP\EmployeePayroll\EmployeePayrollManagerLayer\obj\Debug\netcoreapp3.1\EmployeePayrollManagerLayer.AssemblyInfoInputs.cache
+F:\CFP\EmployeePayroll\EmployeePayrollManagerLayer\obj\Debug\netcoreapp3.1\EmployeePayrollManagerLayer.AssemblyInfo.cs
+F:\CFP\EmployeePayroll\EmployeePayrollManagerLayer\obj\Debug\netcoreapp3.1\EmployeePayrollManagerLayer.csproj.CoreCompileInputs.cache
+F:\CFP\EmployeePayroll\EmployeePayrollManagerLayer\obj\Debug\netcoreapp3.1\EmployeePayrollManagerLayer.csproj.CopyComplete
+F:\CFP\EmployeePayroll\EmployeePayrollManagerLayer\obj\Debug\netcoreapp3.1\EmployeePayrollManagerLayer.dll
+F:\CFP\EmployeePayroll\EmployeePayrollManagerLayer\obj\Debug\netcoreapp3.1\EmployeePayrollManagerLayer.pdb

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "i6fv8jMQGcxSUqMl7TG7/ggTjV4eAUj00sqrDqyLi1dVdrCJN2U0In/5SXaOQwQLKyxHjzAoXgMgbwhijgB9Zg==",
+  "success": true,
+  "projectFilePath": "F:\\CFP\\EmployeePayroll\\EmployeePayrollModelLayer\\EmployeePayrollModelLayer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Lenovo\\.nuget\\packages\\mongodb.bson\\2.16.1\\mongodb.bson.2.16.1.nupkg.sha512",
+    "C:\\Users\\Lenovo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,34 @@
+﻿.Save{
+    margin-right : 15rem;
+}
+
+.main_Container{
+    display : block;
+    flex-direction : row;
+}
+
+.header_text{
+   font-weight : bold;
+}
+
+.table-main {
+    display: block;
+    margin-top : 20px;
+    flex-direction: row;
+}
+
+#edit{
+    float:right;
+}
+
+#delete{
+    float:right;
+}
+
+.nav-link{
+    display : inline-block;
+}
+
+#id{
+    overflow : auto;
+}
