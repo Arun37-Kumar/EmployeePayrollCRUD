@@ -57,6 +57,11 @@
                 <input type="button" @onclick="@DeleteCustomers" class="btn btn-primary" value="YES" />
                 <input type="button" @onclick="@Cancel" class="btn btn-primary" value="NO" />
             </div>
+
+            <MatSnackbar @bind-IsOpen="@snackBarIsOpen">
+                <MatSnackbarContent>Deleted Successfully!</MatSnackbarContent>
+            </MatSnackbar>
+
         </div>
     </form>
 </div>
@@ -67,14 +72,22 @@
     public string Id { get; set; }
     EmployeeModel Emp = new EmployeeModel();
 
+    bool snackBarIsOpen = false;
+
     protected override async Task OnInitializedAsync()
     {
         Emp =  manager.GetEmployeeById(Convert.ToString(Id));
     }
 
-    protected void DeleteCustomers()
+    protected async void DeleteCustomers()
     {
         manager.DeleteEmployee(Emp.Id);
+
+        snackBarIsOpen = true;
+        this.StateHasChanged();
+
+        await Task.Delay(2000);
+
         NavigationManager.NavigateTo("/show");
     }
     void Cancel()

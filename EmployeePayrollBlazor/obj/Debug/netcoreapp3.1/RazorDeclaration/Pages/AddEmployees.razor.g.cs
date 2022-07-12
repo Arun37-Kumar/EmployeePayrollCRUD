@@ -76,6 +76,13 @@ using EmployeePayrollBlazor.Shared;
 #line hidden
 #nullable disable
 #nullable restore
+#line 10 "F:\CFP\EmployeePayroll\EmployeePayrollBlazor\_Imports.razor"
+using MatBlazor;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 2 "F:\CFP\EmployeePayroll\EmployeePayrollBlazor\Pages\AddEmployees.razor"
 using EmployeePayrollModelLayer;
 
@@ -98,14 +105,19 @@ using EmployeePayrollManagerLayer.Interface;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 127 "F:\CFP\EmployeePayroll\EmployeePayrollBlazor\Pages\AddEmployees.razor"
+#line 135 "F:\CFP\EmployeePayroll\EmployeePayrollBlazor\Pages\AddEmployees.razor"
        
     EmployeeModel employeeModel = new EmployeeModel();
-
-    protected void AddEmployee()
+    bool snackBarIsOpen = false;
+    protected async void AddEmployee()
     {
         manager.AddEmployee(employeeModel);
+        snackBarIsOpen = true;
+        this.StateHasChanged();
+
+        await Task.Delay(5000);
         navigate.NavigateTo("/show");
+
     }
 
     public void Redirect()

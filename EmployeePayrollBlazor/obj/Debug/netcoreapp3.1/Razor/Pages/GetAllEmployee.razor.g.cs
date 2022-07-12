@@ -73,6 +73,13 @@ using EmployeePayrollBlazor.Shared;
 #line hidden
 #nullable disable
 #nullable restore
+#line 10 "F:\CFP\EmployeePayroll\EmployeePayrollBlazor\_Imports.razor"
+using MatBlazor;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 2 "F:\CFP\EmployeePayroll\EmployeePayrollBlazor\Pages\GetAllEmployee.razor"
 using EmployeePayrollModelLayer;
 

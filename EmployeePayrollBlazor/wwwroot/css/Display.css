@@ -9,6 +9,7 @@
 
 .header_text{
    font-weight : bold;
+   font-size : 20px;
 }
 
 .table-main {
@@ -31,4 +32,14 @@
 
 #id{
     overflow : auto;
+}
+
+#emp_count {
+    border: 2px solid green;
+    border-radius: 53px;
+    margin: 3px;
+    padding: 5px 14px;
+    color: red;
+    background-color: greenyellow;
+}
 }

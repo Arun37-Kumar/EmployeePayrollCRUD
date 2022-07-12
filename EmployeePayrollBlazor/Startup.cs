@@ -4,6 +4,7 @@ using EmployeePayrollManagerLayer.Services;
 using EmployeePayrollModelLayer;
 using EmployeePayrollRepositoryLayer.Interface;
 using EmployeePayrollRepositoryLayer.Services;
+using MatBlazor;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -28,6 +29,7 @@ namespace EmployeePayrollBlazor
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
+            services.AddMatBlazor();
             services.AddSingleton<WeatherForecastService>();
             services.Configure<DatabaseSetting>(this.Configuration.GetSection(nameof(DatabaseSetting)));
             services.AddSingleton<IDatabaseSetting>(sp =>

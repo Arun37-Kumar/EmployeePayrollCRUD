@@ -87,11 +87,11 @@
                         </option>
                         <option value="HR">HR</option>
                         <option value="Developer">Developer</option>
-                        <option value="Developer">Tester</option>
-                        <option value="Developer">Manager</option>
-                        <option value="Developer">Associate Engineer</option>
-                        <option value="Developer">Junior Engineer</option>
-                        <option value="Developer">Senior Engineer</option>
+                        <option value="Tester">Tester</option>
+                        <option value="Manager">Manager</option>
+                        <option value="Associate Engineer">Associate Engineer</option>
+                        <option value="Jr Engineer">Junior Engineer</option>
+                        <option value="Sr Engineer">Senior Engineer</option>
                     </select>
                 </div>
             </div>
@@ -99,13 +99,13 @@
             <div class="row-content">
                 <label class="label text" for="salary">Choose your Salary: </label>
                 <input class="input" type="number" name="salary" min="30000" max="60000" step="100"
-                       defaultvalue="40000" @bind="employeeModel.Salary">
+                       defaultvalue="40000" @bind="employeeModel.Salary" required>
                 @*<output class="salary-output text" for="salary"> 400000</output>*@
             </div>
 
             <div class="row-content">
                 <label class="label text" for="startDate">Start Date</label>
-                <input class="input" type="date" @bind="employeeModel.Date" />
+                <input class="input" type="date" @bind="employeeModel.Date" required />
             </div>
 
             <div class="row-content">
@@ -120,17 +120,30 @@
                     <button type="reset" class="button resetButton">Reset</button>
                 </div>
             </div>
+
+            <MatSnackbar @bind-IsOpen="@snackBarIsOpen">
+                <MatSnackbarContent>Registered Successfully!</MatSnackbarContent>
+                <MatSnackbarActions>
+                    <a href="show"><MatButton Raised="true">Go to Dashboard</MatButton></a>
+                </MatSnackbarActions>
+            </MatSnackbar>
+
         </div>
     </EditForm>
 </form>
 
 @code {
     EmployeeModel employeeModel = new EmployeeModel();
-
-    protected void AddEmployee()
+    bool snackBarIsOpen = false;
+    protected async void AddEmployee()
     {
         manager.AddEmployee(employeeModel);
+        snackBarIsOpen = true;
+        this.StateHasChanged();
+
+        await Task.Delay(5000);
         navigate.NavigateTo("/show");
+
     }
 
     public void Redirect()

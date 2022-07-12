@@ -174,3 +174,15 @@ F:\CFP\EmployeePayroll\EmployeePayrollBlazor\obj\Debug\netcoreapp3.1\EmployeePay
 F:\CFP\EmployeePayroll\EmployeePayrollBlazor\obj\Debug\netcoreapp3.1\EmployeePayrollBlazor.dll
 F:\CFP\EmployeePayroll\EmployeePayrollBlazor\obj\Debug\netcoreapp3.1\EmployeePayrollBlazor.pdb
 F:\CFP\EmployeePayroll\EmployeePayrollBlazor\obj\Debug\netcoreapp3.1\EmployeePayrollBlazor.genruntimeconfig.cache
+F:\CFP\EmployeePayroll\EmployeePayrollBlazor\bin\Debug\netcoreapp3.1\EmployeePayrollBlazor.StaticWebAssets.xml
+F:\CFP\EmployeePayroll\EmployeePayrollBlazor\bin\Debug\netcoreapp3.1\MatBlazor.dll
+F:\CFP\EmployeePayroll\EmployeePayrollBlazor\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authorization.dll
+F:\CFP\EmployeePayroll\EmployeePayrollBlazor\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.dll
+F:\CFP\EmployeePayroll\EmployeePayrollBlazor\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.Forms.dll
+F:\CFP\EmployeePayroll\EmployeePayrollBlazor\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.Web.dll
+F:\CFP\EmployeePayroll\EmployeePayrollBlazor\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Metadata.dll
+F:\CFP\EmployeePayroll\EmployeePayrollBlazor\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+F:\CFP\EmployeePayroll\EmployeePayrollBlazor\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\CFP\EmployeePayroll\EmployeePayrollBlazor\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+F:\CFP\EmployeePayroll\EmployeePayrollBlazor\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+F:\CFP\EmployeePayroll\EmployeePayrollBlazor\bin\Debug\netcoreapp3.1\Microsoft.JSInterop.dll

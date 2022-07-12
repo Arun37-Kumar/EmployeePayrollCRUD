@@ -76,6 +76,13 @@ using EmployeePayrollBlazor.Shared;
 #line hidden
 #nullable disable
 #nullable restore
+#line 10 "F:\CFP\EmployeePayroll\EmployeePayrollBlazor\_Imports.razor"
+using MatBlazor;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 2 "F:\CFP\EmployeePayroll\EmployeePayrollBlazor\Pages\UpdateEmployee.razor"
 using EmployeePayrollModelLayer;
 
@@ -98,10 +105,11 @@ using EmployeePayrollManagerLayer.Interface;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 121 "F:\CFP\EmployeePayroll\EmployeePayrollBlazor\Pages\UpdateEmployee.razor"
+#line 134 "F:\CFP\EmployeePayroll\EmployeePayrollBlazor\Pages\UpdateEmployee.razor"
        
 
     EmployeeModel model = new EmployeeModel();
+    bool snackBarIsOpen = false;
 
     [Parameter]
     public string id { get; set; }
@@ -111,9 +119,12 @@ using EmployeePayrollManagerLayer.Interface;
         model = await Task.Run(() => Employeemanager.GetEmployeeById(id));
     }
 
-    protected void Update()
+    protected async void Update()
     {
         Employeemanager.UpdateEmployee(model);
+        snackBarIsOpen = true;
+        this.StateHasChanged();
+        await Task.Delay(3000);
         navigationManager.NavigateTo("/show");
     }
     protected void AddImage(string image)

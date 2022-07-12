@@ -76,6 +76,13 @@ using EmployeePayrollBlazor.Shared;
 #line hidden
 #nullable disable
 #nullable restore
+#line 10 "F:\CFP\EmployeePayroll\EmployeePayrollBlazor\_Imports.razor"
+using MatBlazor;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 2 "F:\CFP\EmployeePayroll\EmployeePayrollBlazor\Pages\DeleteEmployee.razor"
 using EmployeePayrollModelLayer;
 
@@ -98,20 +105,28 @@ using EmployeePayrollManagerLayer.Interface;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 65 "F:\CFP\EmployeePayroll\EmployeePayrollBlazor\Pages\DeleteEmployee.razor"
+#line 70 "F:\CFP\EmployeePayroll\EmployeePayrollBlazor\Pages\DeleteEmployee.razor"
        
     [Parameter]
     public string Id { get; set; }
     EmployeeModel Emp = new EmployeeModel();
+
+    bool snackBarIsOpen = false;
 
     protected override async Task OnInitializedAsync()
     {
         Emp =  manager.GetEmployeeById(Convert.ToString(Id));
     }
 
-    protected void DeleteCustomers()
+    protected async void DeleteCustomers()
     {
         manager.DeleteEmployee(Emp.Id);
+
+        snackBarIsOpen = true;
+        this.StateHasChanged();
+
+        await Task.Delay(2000);
+
         NavigationManager.NavigateTo("/show");
     }
     void Cancel()
